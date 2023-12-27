@@ -12,7 +12,11 @@ a = 0
 b = 1
 c = 0
 
+#Se usa en el caso que se requiera mostar los numeros en forma de lista
+showLista = []
+
 for x in range(10):
+    showLista.append(c)
     print(f"{c}")
     a = b
     b = c
