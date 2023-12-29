@@ -31,3 +31,22 @@ def inputNumber(message) -> int:
         else:
             validNumber = True
             return numero
+        
+#Funcion para que el usuario ingrese solo numeros flotantes
+def inputFloat(message) -> int:
+    #Variable que almacena el estado del dato True(Si es Numero) Falso(si no)
+    validNumber = False
+
+    #Ciclo para continuar con el programa solo si el usuario ingresa un dato valido 
+    while(not validNumber):
+
+        #verificando la integridad de la información ingresada.
+        try:
+            #Variable que almacena un numero del usuario
+            numero = float(input(f"{message} :> "))
+        except:
+            cls()
+            print("Error Ingresa un Dato Valido")
+        else:
+            validNumber = True
+            return numero
