@@ -267,39 +267,7 @@ Estas prácticas estructuradas y documentadas facilitarán la comprensión y col
       |producto |Salida|dist()|
       |stock|Entrada|int()|
       |operation|Entrada|int()|
-## Nivel Avanzado:
 
-- **[Torneo de tenis de mesa](https://github.com/David-Albarracin/TallerNavidenoPython/blob/main/Nivel_Avanzado/main.py).**
-
-   - **Descripción del Problema:**
-      El departamento de bienestar de campus desea organizar un torneo de tenis de mesa y requiere Un programa que le permita llevar el control de los juegos llevados a cabo por cada uno de los Inscritos en el torneo. El programa debe cumplir con unos requerimientos
-
-   - **Solución Propuesta:**
-        Para abordar esta problemática, se comenzará con la creación de un menú que incluirá la opción de registrar un nuevo camper. El programa solicitará información como el nombre y la edad, y, en función de la edad, asignará automáticamente una categoría al camper. Se llevará un registro detallado de cada jugador, incluyendo partidas jugadas, partidas ganadas, partidas perdidas, puntos a favor y el total de puntos. La estructura del camper se visualiza de la siguiente forma:
-        ```python
-        camper = {
-            "id": "Generado aleatoriamente",
-            "nombre": "Nombre del camper",
-            "edad": 12,
-            "PJ": "Partidas Jugadas",
-            "PG": "Partidas Ganadas",
-            "PP": "Partidas Perdidas",
-            "PA": "Puntos a Favor",
-            "TP": "Total de Puntos"
-        }
-        ```
-        Una vez que haya al menos cinco participantes en cada categoría, se habilitará la opción de jugar partidos. En esta opción, se generarán números aleatorios para determinar el ganador, siendo aquel con el número más alto. Los resultados de cada partida se guardarán y se actualizarán los estadísticas del camper correspondiente.
-      
-      
-
-   - **Tabla de Declaración de Variables:**
-      | Nombres   | Tipo E/S  |  Tipo     |
-      |-----------|-----------|-----------|
-      |novatos|Entrada|list()|
-      |intermedio|Entrada|list()|
-      |avanzado|Entrada|list()|
-      |camper|Salida|dist()|
-      |opcion|Entrada|str()|
 ## Nivel Avanzado:
 
 - **[Torneo de tenis de mesa](https://github.com/David-Albarracin/TallerNavidenoPython/blob/main/Nivel_Avanzado/main.py).**
