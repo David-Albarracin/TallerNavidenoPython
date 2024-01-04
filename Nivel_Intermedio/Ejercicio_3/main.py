@@ -32,3 +32,31 @@ se encuentra por debajo del límite mínimo establecido.
 la diferencia entre el valor de venta y el valor de compra de cada producto,
 multiplicada por la cantidad en stock.
 """
+
+import os
+import productosController as pc
+import menusTemplate as menu
+import reusable
+
+while(True):
+    os.system("cls")
+    opMenu = input(menu.principal)
+    if(opMenu == "1"):
+        pc.newProduct()
+    elif(opMenu == "2"):
+        pc.listProducts()
+    elif(opMenu == "3"):
+        producto = pc.searchProduct()
+        if (producto):
+           stock = pc.checkStock(producto['stock_minimo'], producto['stock_maximo'])
+           print("Stock Actualizado Correctamente")
+    elif(opMenu == "4"):
+        pc.criStockList()
+    elif(opMenu == "5"):
+        pc.bestProduct()
+    elif(opMenu == "6"):
+        break
+    else:
+        print("Opcion No Reconocida")
+
+    os.system("pause")

@@ -23,5 +23,23 @@ El que tenga mas PA(Punto a favor)
 El programa debe implementar diccionarios y modulos
 
 """
+import os
+import menusTemplate as menu
+import campersController as cc
 
-
+while(True):
+    os.system("cls")
+    opMenu = input(menu.principal)
+    if(opMenu == "1"):
+        cc.regisCamper()
+    elif(opMenu == "2"):
+        pass
+    elif(opMenu == "3"):
+        pass
+    elif(opMenu == "4"):
+        pass
+    elif(opMenu == "5"):
+        break
+    else:
+        print("Opcion No Reconocida")
+    os.system("pause")

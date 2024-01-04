@@ -16,3 +16,40 @@ consumidos por los dispositivos en cada una de las oficinas.
 5. Salir
 
 """
+import os
+import dependenciaController as dc
+
+
+while(True):
+    os.system("cls")
+    opMenu = input(
+"""
+Alcaldía de Bucaramanga CO2
+
+    1. Registrar Dependencia
+    2. Registrar consumo por dependencia
+    3. Ver CO2 producido
+    4. Dependencia que produce mayor CO2
+    5. Salir
+
+:> """
+)
+    if(opMenu == "1"):
+        dc.newDependencia()
+    elif(opMenu == "2"):
+        dc.registrarConsumo()
+    elif(opMenu == "3"):
+        dependencia = dc.searchDependencia()
+        if(dependencia):
+            print(f"La Dependencia {dependencia['nombre']} tiene un Consumo De {dependencia['CO2']}tCO2eq/MWH")
+    elif(opMenu == "4"):
+        dependencia = dc.moreCo2()
+        print(f"La Dependencia que Produce Mayor C02 es {dependencia['nombre']}")
+
+    elif(opMenu == "5"):
+        break
+    else:
+        print("Opcion No Reconocida")
+        
+    
+    os.system("pause")
