@@ -13,5 +13,9 @@ categorias = """
     1.Novato
     2.Intermedio
     3.Avanzado
+    4.Salir
 
 :> """
+
+
+error = "\033[91mError Opcion No Valida Intentalo de Nuevo..\033[0m"

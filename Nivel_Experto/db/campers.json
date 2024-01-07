@@ -1,0 +1,134 @@
+{
+    "1": {
+        "cc": "1",
+        "nombre": "1",
+        "apellido": "1",
+        "ciudad": "Bucaramanga",
+        "direccion": "1",
+        "acudiente": "1",
+        "telefono": {
+            "celular": "1",
+            "fijo": "1"
+        },
+        "estado": "no aprobado",
+        "ruta": {
+            "uid": "",
+            "moduloFundamentos": {
+                "notaPruebaTecnica": 0,
+                "notaPruebaTeorica": 0,
+                "notasTrabajosQuizes": 0,
+                "definitiva": 0
+            }
+        }
+    },
+    "2": {
+        "cc": "2",
+        "nombre": "1",
+        "apellido": "1",
+        "ciudad": "Bucaramanga",
+        "direccion": "1",
+        "acudiente": "2",
+        "telefono": {
+            "celular": "3",
+            "fijo": "4"
+        },
+        "estado": "no aprobado",
+        "ruta": {
+            "uid": "",
+            "moduloFundamentos": {
+                "notaPruebaTecnica": 0,
+                "notaPruebaTeorica": 0,
+                "notasTrabajosQuizes": 0,
+                "definitiva": 0
+            }
+        }
+    },
+    "3": {
+        "cc": "3",
+        "nombre": "1",
+        "apellido": "1",
+        "ciudad": "Bucaramanga",
+        "direccion": "1",
+        "acudiente": "3",
+        "telefono": {
+            "celular": "3",
+            "fijo": "3"
+        },
+        "estado": "NO APROBADO",
+        "ruta": {
+            "uid": "",
+            "moduloFundamentos": {
+                "notaPruebaTecnica": 0,
+                "notaPruebaTeorica": 0,
+                "notasTrabajosQuizes": 0,
+                "definitiva": 0
+            }
+        }
+    },
+    "5": {
+        "cc": "5",
+        "nombre": "5",
+        "apellido": "5",
+        "ciudad": "Bucaramanga",
+        "direccion": "5",
+        "acudiente": "5",
+        "telefono": {
+            "celular": "5",
+            "fijo": "5"
+        },
+        "estado": "NO APROBADO",
+        "ruta": {
+            "uid": "",
+            "moduloFundamentos": {
+                "notaPruebaTecnica": 0,
+                "notaPruebaTeorica": 0,
+                "notasTrabajosQuizes": 0,
+                "definitiva": 0
+            }
+        }
+    },
+    "4": {
+        "cc": "4",
+        "nombre": "4",
+        "apellido": "4",
+        "ciudad": "Bucaramanga",
+        "direccion": "4",
+        "acudiente": "4",
+        "telefono": {
+            "celular": "4",
+            "fijo": "4"
+        },
+        "estado": "NO APROBADO",
+        "ruta": {
+            "uid": "",
+            "moduloFundamentos": {
+                "notaPruebaTecnica": 0,
+                "notaPruebaTeorica": 0,
+                "notasTrabajosQuizes": 0,
+                "definitiva": 0
+            }
+        }
+    },
+    "9": {
+        "cc": "9",
+        "nombre": "9",
+        "apellido": "9",
+        "ciudad": "Bucaramanga",
+        "direccion": "9",
+        "acudiente": "9",
+        "telefono": {
+            "celular": "9",
+            "fijo": "9"
+        },
+        "estado": "aprobado",
+        "ruta": {
+            "uid": "",
+            "moduloFundamentos": {
+                "notaPruebaTecnica": 0,
+                "notaPruebaTeorica": 0,
+                "notasTrabajosQuizes": 0,
+                "definitiva": 0
+            }
+        }
+    }
+}

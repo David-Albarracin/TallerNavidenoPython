@@ -1,42 +1,89 @@
 import reusable
 import menusTemplate as menu
+import gameController as game
+import os
 
-novatos = []
-intermedio = []
-avanzado = []
+campers = []
 
 
 def regisCamper():
-    while(True):
-        print("Registrar Jugador en la Categoria")
-        opMenu = input(menu.categorias)
-        categoria = ""
-        if(opMenu == "1"):
-            categoria = "novatos"
-        elif(opMenu == "2"):
-            categoria = "intermedio"
-        elif(opMenu == "3"):
-            categoria = "avanzado"
-        else:
-            pass
-        if categoria:
-            nombre = input("Ingresa el Nombre del Camper :> ")
-            while(True):
-                edad = reusable.inputNumber(f"Ingresa la Edad del Camper {nombre}")
-                if(edad == 15) or (edad == 16):
-                    if categoria != "novatos":
-                        print("la edad del participante no concide con su categoria")
-                    else:
-                        return
-                elif(edad > 17) and (edad <=20):
-                    if categoria != "principiante":
-                        print("la edad del participante no concide con su categoria")
-                    else:
+    camper = {
+        "uid": len(campers)+1,
+        "nombre": "",
+        "edad": "",
+        "categoria": "",
+        "pj": 0,
+        "pg": 0,
+        "pp": 0,
+        "pa": 0,
+        "tp": 0
+    }
+    camper["nombre"] = reusable.inputString("Ingresa El Nombre del Camper")
+    edad = reusable.inputNumber(f"Ingresa la Edad de {camper["nombre"]}")
+    if (edad < 15) or (edad > 99):
+        print(f"El Camper {camper["nombre"]} no puede participar en el Torneo")
+        return
+    else:
+        camper["edad"] = edad
+        while(True):
+            os.system("cls")
+            print("Registrar Jugador en la Categoria")
+            opMenu = input(menu.categorias)
+            if(opMenu == "1"):
+                if(not len(game.novatos)):
+                    if(camper["edad"] == 15) or (camper["edad"] == 16):
+                        camper["categoria"] = "novatos"
                         break
-                elif(edad > 20):
-                    if categoria != "avanzado":
-                        print("la edad del participante no concide con su categoria")
                     else:
-                        break
+                        print("la edad para esta categoria es de 15 a 16 años")
                 else:
-                    print("Edad del participante no valida para el proceso")
+                    print("Los Partidos de esta Categoria ya han Empezado")
+
+            elif(opMenu == "2"):
+                if(not len(game.intermedio)):
+                    if(camper["edad"] <= 20) and (camper["edad"] > 17):
+                        camper["categoria"] = "intermedio"
+                        break
+                    else:
+                        print("la edad para esta categoria es de 17 a 20 años")
+                else:
+                    print("Los Partidos de esta Categoria ya han Empezado")
+
+            elif(opMenu == "3"):
+                if(not len(game.avanzado)):
+                    if(camper["edad"] > 20):
+                        camper["categoria"] = "avanzado"
+                        break
+                    else:
+                        print("la edad para esta categoria es mayor de 20 años")
+                else:
+                    print("Los Partidos de esta Categoria ya han Empezado")
+            elif(opMenu == "4"):
+                break
+            else:
+                print(menu.error)
+            os.system("pause")
+
+    if camper["categoria"]:
+        campers.append(camper)
+        print(f"Se Registro el Camper {camper["nombre"]} en la Categoria {camper["categoria"]}")
+
+
+def listJugadores():
+    print("{:<10} {:<15} {:<10} {:<15} {:<15} {:<15} {:<15} {:<10}".format(
+    "UID", "Nombre", "", "PJ", "PG", "PP", "PA", "TP"
+    ))
+    # Línea separadora
+    print("="*110)
+    # Contenido de la tabla
+    for camper in campers:
+        print("{:<10} {:<15} {:<10} {:<15} {:<15} {:<15} {:<15} {:<10}".format(
+            camper["uid"],
+            camper["nombre"],
+            "",
+            camper["pj"],
+            camper["pg"],
+            camper["pp"],
+            camper["pa"],
+            camper["tp"]
+        ))

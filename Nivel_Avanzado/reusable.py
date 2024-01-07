@@ -37,3 +37,16 @@ def yesORnot(message):
             else:
                 print("Ingresa un Dato Valido (S) o (N)")
         
+def inputString(message:str):
+    while(True):
+        try:
+            texto = input(f"{message} :> ")
+        except: 
+            print("Ingresa un Dato Valido")
+        else:
+            if (len(texto) < 2):
+                print("Ingresa un Dato Valido")
+            else:
+                break
+        
+    return texto

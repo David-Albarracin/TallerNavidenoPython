@@ -26,6 +26,7 @@ El programa debe implementar diccionarios y modulos
 import os
 import menusTemplate as menu
 import campersController as cc
+import gameController as gc
 
 while(True):
     os.system("cls")
@@ -33,13 +34,13 @@ while(True):
     if(opMenu == "1"):
         cc.regisCamper()
     elif(opMenu == "2"):
-        pass
+        gc.runGames()
     elif(opMenu == "3"):
-        pass
+        cc.listJugadores()
     elif(opMenu == "4"):
-        pass
+        gc.showWiner()
     elif(opMenu == "5"):
         break
     else:
-        print("Opcion No Reconocida")
+        print(menu.error)
     os.system("pause")

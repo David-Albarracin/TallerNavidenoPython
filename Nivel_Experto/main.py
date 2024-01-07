@@ -1,3 +1,52 @@
+
+
+import services.corefile as cf
+import templates.menus as menu
+import templates.reusable as reusable
+import services.campers as sc
+import services.notas as notas
+
+
+
+
+if __name__ == '__main__':
+    while (True):
+        opMenu = input(menu.showMenu("home"))
+        if (opMenu == "1"):
+            sc.newCamper()
+        elif (opMenu == "2"):
+            notas.pruebaAdmision()
+        elif(opMenu == "9"):
+            reusable.showSuccess("Gracias Por usar el Sistema")
+            break
+        else:
+            reusable.showError("Opcion No Valida Intentalo de Nuevo")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 """
 Nivel Experto
 El departamento académico de campuslands desea crear un programa que le permita llevar el seguimiento
