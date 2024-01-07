@@ -31,6 +31,12 @@ def showError(message):
     os.system("pause")
 
 
+def showInfo(message):
+    os.system("cls")
+    print("\033[93m{}\033[00m" .format(message))
+    os.system("pause")
+
+
 def uuid():
     return random.randint(0000, 9999)
 

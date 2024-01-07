@@ -26,8 +26,11 @@ def checkFile(**kwargs):
 
     return kwargs
 
-
+"""
 def updateFile(**kwargs):
     with open(f"{PATH}{URL}","r+") as archivo:
+        data = json.load(archivo)
+        data.update(kwargs)
         archivo.seek(0)
-        json.dump(kwargs,archivo,indent=4)
+        json.dump(data,archivo,indent=4)
+"""

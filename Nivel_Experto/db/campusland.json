@@ -1,0 +1,38 @@
+{
+    "areas": {
+        "artemis": {
+            "grupos": []
+        },
+        "sputnik": {
+            "grupos": []
+        },
+        "apolo": {
+            "grupos": []
+        }
+    },
+    "rutas": {
+        "nodeJS": {
+            "nombreRuta": "",
+            "area": "",
+            "fechaInicio": "",
+            "fechaFinal": "",
+            "trainers": [],
+            "grupo": "",
+            "campers": [],
+            "jornada": "",
+            "fundamentosProgramacion": [],
+            "programacionWEB": [],
+            "programacionFormal": [],
+            "basesDatos": [],
+            "backend": []
+        }
+    },
+    "trainers": {
+        "1": {
+            "uid": "",
+            "nombre": "",
+            "jornada": "",
+            "grupos": []
+        }
+    }
+}

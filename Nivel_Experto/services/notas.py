@@ -21,13 +21,15 @@ def pruebaAdmision():
                 
             elif(camper["estado"] == "no_aprobado"):
                 print(f"El Camper {camper["nombre"]} ya Presento las Pruebas y NO fue apto")
+            elif(camper["estado"] == "aprobado"):
+                print(f"El Camper {camper["nombre"]} ya Presento las Pruebas y Aprobo")
             else:
-                print(f"El Camper estado de {camper["nombre"]} no es apto para esta opcion")
+                print(f"El estado de {camper["nombre"]} no es apto para esta opcion")
 
         else:
             print("No se Encontro a el Camper")
         
         if(not reusable.yesORnot("Desea Registrar la Nota de otro Camper")):
                 db.URL = "campers.json"
-                db.updateFile(**sc.campers)
+                db.newFile(**sc.campers)
                 break

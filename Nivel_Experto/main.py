@@ -1,10 +1,10 @@
 
 
-import services.corefile as cf
 import templates.menus as menu
 import templates.reusable as reusable
 import services.campers as sc
 import services.notas as notas
+import services.campusland as campus
 
 
 
@@ -16,6 +16,10 @@ if __name__ == '__main__':
             sc.newCamper()
         elif (opMenu == "2"):
             notas.pruebaAdmision()
+        elif(opMenu == "3"):
+            campus.newArea()
+        elif(opMenu == "4"):
+            campus.newRuta()
         elif(opMenu == "9"):
             reusable.showSuccess("Gracias Por usar el Sistema")
             break
