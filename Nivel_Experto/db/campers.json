@@ -130,5 +130,27 @@
                 "definitiva": 0
             }
         }
+    },
+    "10": {
+        "cc": "10",
+        "nombre": "p",
+        "apellido": "2",
+        "ciudad": "Bucaramanga",
+        "direccion": "2",
+        "acudiente": "2",
+        "telefono": {
+            "celular": "2",
+            "fijo": "2"
+        },
+        "estado": "inscrito",
+        "ruta": {
+            "uid": "",
+            "moduloFundamentos": {
+                "notaPruebaTecnica": 0,
+                "notaPruebaTeorica": 0,
+                "notasTrabajosQuizes": 0,
+                "definitiva": 0
+            }
+        }
     }
 }

@@ -8,12 +8,22 @@ def pruebaAdmision():
     while(True):
         camper = sc.getCamper()
         if camper:
-            nota = reusable.checkInput("float", f"Ingresa la nota de la prueba de admision de {camper["nombre"]}")
-            if (nota >= 60):
-                camper["estado"] = "aprobado"
+            if (camper["estado"] == "inscrito"):
+                teorica = reusable.checkInput("float", f"Ingresa la nota de la prueba teorica {camper["nombre"]}")
+                practica = reusable.checkInput("float", f"Ingresa la nota de la prueba practica {camper["nombre"]}")
+                nota = (teorica + practica) / 2
+                if (nota >= 60):
+                    camper["estado"] = "aprobado"
+                else:
+                    camper["estado"] = "no_aprobado"
+
+                reusable.showSuccess("Se Actualizo la Nota Correctamente")
+                
+            elif(camper["estado"] == "no_aprobado"):
+                print(f"El Camper {camper["nombre"]} ya Presento las Pruebas y NO fue apto")
             else:
-                camper["estado"] = "no aprobado"
-            reusable.showSuccess("Se Actualizo la Nota Correctamente")
+                print(f"El Camper estado de {camper["nombre"]} no es apto para esta opcion")
+
         else:
             print("No se Encontro a el Camper")
         
