@@ -19,7 +19,8 @@ headers = {
     "inscrito": "campers con el estado inscrito",
     "aprobado": "campers que aprobaron el examen",
     "bajoRendimiento": "Estudiantes con bajo rendimiento ",
-    "infoRutas": "informacion sobre la ruta"
+    "infoRutas": "informacion sobre la ruta",
+    "eliminarCamper": "Borrar estudiante de la Base de Datos"
 }
 
 
@@ -30,9 +31,10 @@ opcions = {
         "registro de area de entrenamiento",
         "registro de ruta de entrenamiento",
         "gestionar matricula",
-        "registar notas",
+        "registrar notas",
         "registrar nuevo trainer",
         "generar reportes",
+        "Eliminar Camper",
         "salir"
     ],
     "rutaMenu": [

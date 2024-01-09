@@ -139,27 +139,14 @@
             "grupos": [
                 "m1_2"
             ]
-        },
-        "2": {
-            "nombre": "2",
-            "uid": 3,
-            "jornada": "morning",
-            "grupos": []
-        },
-        "angel": {
-            "nombre": "miguel angel",
-            "uid": 4,
-            "jornada": "afternoon",
-            "grupos": []
         }
     },
     "grupos": {
         "j1_1": [
-            "2"
+            "1",
+            "007"
         ],
         "j2_1": [],
-        "m1_2": [
-            "1"
-        ]
+        "m1_2": []
     }
 }

@@ -1,33 +1,8 @@
 {
-    "1": {
-        "cc": "1",
-        "nombre": "1",
-        "apellido": "",
-        "ciudad": "Bucaramanga",
-        "direccion": "1",
-        "acudiente": "1",
-        "telefono": {
-            "celular": "1",
-            "fijo": "1"
-        },
-        "estado": "estudiando",
-        "apellidos": "1",
-        "ruta": "nodejs",
-        "trainer": "miguel",
-        "grupo": "m1_2",
-        "notas": {
-            "moduloFundamentos": {
-                "notaPruebaTecnica": 1.2,
-                "notaPruebaTeorica": 0.6,
-                "notasTrabajosQuizes": 0.2,
-                "definitiva": 1.9999999999999998
-            }
-        }
-    },
-    "2": {
-        "cc": "2",
-        "nombre": "2",
-        "apellido": "",
+    "007": {
+        "cc": "007",
+        "nombre": "jame",
+        "apellido": "bone",
         "ciudad": "Bucaramanga",
         "direccion": "2",
         "acudiente": "2",
@@ -36,8 +11,14 @@
             "fijo": "2"
         },
         "estado": "estudiando",
-        "notas": {},
-        "apellidos": "2",
+        "notas": {
+            "moduloFundamentos": {
+                "notaPruebaTecnica": 57.0,
+                "notaPruebaTeorica": 28.5,
+                "notasTrabajosQuizes": 9.5,
+                "definitiva": 95.0
+            }
+        },
         "ruta": "java",
         "trainer": "johlver",
         "grupo": "j1_1"

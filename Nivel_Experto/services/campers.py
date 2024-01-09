@@ -32,7 +32,7 @@ def newCamper():
         if cc:
             camper["cc"] = cc
             camper["nombre"] = reusable.checkInput("str", f"Ingresa el Nombre del Camper")
-            camper["apellidos"] = reusable.checkInput("str", f"Ingresa los Apellidos del Camper")       
+            camper["apellido"] = reusable.checkInput("str", f"Ingresa los Apellidos del Camper")       
             camper["direccion"] = reusable.checkInput("str", f"Ingresa la Direccion de residencia")   
             camper["telefono"]["celular"] = reusable.checkInput("str", f"Ingresa el Numero Celular del camper")
             camper["telefono"]["fijo"] = reusable.checkInput("str", f"Ingresa el Numero Fijo del camper")
@@ -112,7 +112,16 @@ def matricular():
         if not reusable.yesORnot("Desea Intentar Con Otro Camper"):
             break
 
-    
+
+def delCamper():
+    menu.showHeader("eliminarCamper")
+    camper = getCamper()
+    if camper:
+        campers.pop(camper["cc"])
+        db.newFile(**campers)
+        reusable.showSuccess("El Estudiante Se Borro Correctamente")
+    else:
+        reusable.showError("Este Usuario no Existe en la Base de Datos")
 
 URL = "campers.json"
 

@@ -29,6 +29,8 @@ if __name__ == '__main__':
         elif(opMenu == "8"):
             notas.moduloReportes()
         elif(opMenu == "9"):
+            sc.delCamper()
+        elif(opMenu == "10"):
             reusable.showSuccess("Gracias Por usar el Sistema")
             break
         else:

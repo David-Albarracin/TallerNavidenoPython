@@ -118,7 +118,7 @@ def newRuta():
         opcion = input(menu.showMenu("rutaMenu"))
         if(opcion == "1"):
             ruta = {}
-            rutaName = reusable.checkInput("str", "Nombre de La Ruta Nueva")
+            rutaName = reusable.checkInput("str", "Nombre de La Ruta Nueva").replace(" ", "")
             if not (rutaName in rutas):
                 ruta.update({"nombreRuta":rutaName})
 
@@ -142,7 +142,7 @@ def newRuta():
                     menu.showHeader("thematic")
                     ruta.update(selectTematics())
                     
-                    rutas.update(ruta)
+                    rutas.update({rutaName:ruta})
                     db.newFile(**campuslandDB)
                     reusable.showSuccess("Nueva Ruta Creada Correctamente")
                 else:
