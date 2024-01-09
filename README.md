@@ -36,6 +36,9 @@ Este taller está diseñado con pautas específicas que facilitarán la comprens
 4. **Funciones Documentadas:**
     Algunas funciones incluyen comentarios que explican el proceso que llevan a cabo. Estos comentarios proporcionan detalles sobre la funcionalidad de la función y el valor que se espera que retorne.
 
+5. **Analisis**
+    Algununos analisis tienen lijeros cambios al momento de ver en codigo 
+
 ## Contribuciones
 
 Estas prácticas estructuradas y documentadas facilitarán la comprensión y colaboración en el desarrollo de software, siguiendo las mejores prácticas de la comunidad de desarrollo; Si desea Mas Informacion relacionados con los 100 ejercicios lo invito a visitar [100 EJERCICIOS PSEING](https://www.youtube.com/watch?v=3CNVzw4Kee0&list=PLtzBCV-VcS_TsqlBrmWoq_f0MR7WIpJS9&index=1).
