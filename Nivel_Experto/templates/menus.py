@@ -20,7 +20,8 @@ headers = {
     "aprobado": "campers que aprobaron el examen",
     "bajoRendimiento": "Estudiantes con bajo rendimiento ",
     "infoRutas": "informacion sobre la ruta",
-    "eliminarCamper": "Borrar estudiante de la Base de Datos"
+    "eliminarCamper": "Borrar estudiante de la Base de Datos",
+    "editarCamper": "Editando Campers"
 }
 
 
@@ -35,6 +36,7 @@ opcions = {
         "registrar nuevo trainer",
         "generar reportes",
         "Eliminar Camper",
+        "Editar Camper",
         "salir"
     ],
     "rutaMenu": [

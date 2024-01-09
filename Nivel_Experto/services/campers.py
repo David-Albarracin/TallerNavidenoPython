@@ -40,10 +40,43 @@ def newCamper():
             campers.update({camper["cc"]:camper})
             db.newFile(**campers)
             reusable.showSuccess(f"Camper {camper['nombre']} Creado Correctamente")
+        else:
+            yes = reusable.yesORnot(f"Prefiere Editar los Campers en Lugar de Crear uno Nuevo?")
+            if yes:
+                editarCamper()
+            else:
+                break
         
         yes = reusable.yesORnot("Desea Registrar Otro Camper")
         if not yes:
             break
+
+def editarCamper():
+    while True:
+        menu.showHeader("editarCamper")
+        camper = getCamper()
+        if camper:
+            for key, value in camper.items():
+                if (type(value) == dict):
+                    if(key == "telefono"):
+                        telefono = camper.get("telefono")
+                        for key, value in telefono.items():
+                            if (reusable.yesORnot(f"Desea Editar Telefono {key}")):
+                                data = reusable.checkInput("str", f"Ingresa {key}")
+                                telefono.update({key: data})
+                else:
+                    if not((key == "cc") or (key == "estado") or (key == "ruta") or (key == "trainer") or (key == "grupo")):
+                        if (reusable.yesORnot(f"Desea Editar {key}")):
+                            data = reusable.checkInput("str", f"Ingresa {key}")
+                            camper.update({key: data})
+            
+            db.newFile(**campers)
+            reusable.showSuccess("El Camper se Edito Correctamente")
+        else:
+            reusable.showError("El Camper No Existe")
+        
+        if not reusable.yesORnot("Desea Editar Otro Camper"):
+            return
 
 def notRepetCC():
     while (True):

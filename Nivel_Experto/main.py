@@ -31,6 +31,8 @@ if __name__ == '__main__':
         elif(opMenu == "9"):
             sc.delCamper()
         elif(opMenu == "10"):
+            sc.editarCamper()
+        elif(opMenu == "11"):
             reusable.showSuccess("Gracias Por usar el Sistema")
             break
         else:
