@@ -20,6 +20,14 @@ if __name__ == '__main__':
             campus.newArea()
         elif(opMenu == "4"):
             campus.newRuta()
+        elif(opMenu == "5"):
+            sc.matricular()
+        elif(opMenu == "6"):
+            notas.registrarNotas()
+        elif(opMenu == "7"):
+            campus.newTrainer()
+        elif(opMenu == "8"):
+            notas.moduloReportes()
         elif(opMenu == "9"):
             reusable.showSuccess("Gracias Por usar el Sistema")
             break

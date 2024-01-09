@@ -26,6 +26,17 @@ def checkFile(**kwargs):
 
     return kwargs
 
+def updateDataBases():
+    import services.campers as campers
+    import services.campusland as campus
+    with open(f"{PATH}{campus.URL}", "w") as archivo:
+        json.dump(campus.campuslandDB, archivo, indent=4)
+        archivo.close
+
+    with open(f"{PATH}{campers.URL}", "w") as archivo:
+        json.dump(campers.campers, archivo, indent=4)
+        archivo.close
+
 """
 def updateFile(**kwargs):
     with open(f"{PATH}{URL}","r+") as archivo:

@@ -2,7 +2,7 @@
     "1": {
         "cc": "1",
         "nombre": "1",
-        "apellido": "1",
+        "apellido": "",
         "ciudad": "Bucaramanga",
         "direccion": "1",
         "acudiente": "1",
@@ -10,59 +10,36 @@
             "celular": "1",
             "fijo": "1"
         },
-        "estado": "no_aprobado",
-        "ruta": {
-            "uid": "",
+        "estado": "estudiando",
+        "apellidos": "1",
+        "ruta": "nodejs",
+        "trainer": "miguel",
+        "grupo": "m1_2",
+        "notas": {
             "moduloFundamentos": {
-                "notaPruebaTecnica": 0,
-                "notaPruebaTeorica": 0,
-                "notasTrabajosQuizes": 0,
-                "definitiva": 0
+                "notaPruebaTecnica": 1.2,
+                "notaPruebaTeorica": 0.6,
+                "notasTrabajosQuizes": 0.2,
+                "definitiva": 1.9999999999999998
             }
         }
     },
     "2": {
         "cc": "2",
-        "nombre": "1",
-        "apellido": "1",
+        "nombre": "2",
+        "apellido": "",
         "ciudad": "Bucaramanga",
-        "direccion": "1",
+        "direccion": "2",
         "acudiente": "2",
         "telefono": {
             "celular": "2",
             "fijo": "2"
         },
-        "estado": "aprobado",
-        "ruta": {
-            "uid": "",
-            "moduloFundamentos": {
-                "notaPruebaTecnica": 0,
-                "notaPruebaTeorica": 0,
-                "notasTrabajosQuizes": 0,
-                "definitiva": 0
-            }
-        }
-    },
-    "3": {
-        "cc": "3",
-        "nombre": "1",
-        "apellido": "1",
-        "ciudad": "Bucaramanga",
-        "direccion": "1",
-        "acudiente": "3",
-        "telefono": {
-            "celular": "3",
-            "fijo": "3"
-        },
-        "estado": "inscrito",
-        "ruta": {
-            "uid": "",
-            "moduloFundamentos": {
-                "notaPruebaTecnica": 0,
-                "notaPruebaTeorica": 0,
-                "notasTrabajosQuizes": 0,
-                "definitiva": 0
-            }
-        }
+        "estado": "estudiando",
+        "notas": {},
+        "apellidos": "2",
+        "ruta": "java",
+        "trainer": "johlver",
+        "grupo": "j1_1"
     }
 }
